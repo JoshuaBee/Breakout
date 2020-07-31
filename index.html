@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Breakout</title>
+		<meta charset="utf-8" />
+		<meta name="author" content="Joshua Bee" />
+		<meta name="description" content="Breakout" />
+		<!-- Let browser know website is optimized for mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="icon" type="image/png" href="logo-192.png" />
+		<link rel="canonical" href="https://joshuabee.github.io/Breakout" />
+
+		<!-- Progressive Web App -->
+		<meta name="theme-color" content="#000" />
+		<link rel="manifest" href="manifest.json" />
+
+		<!-- CSS Reset -->
+		<link href="css/reset.css" rel="stylesheet" />
+		<!-- Main CSS -->
+		<link href="css/main.css" rel="stylesheet" />
+		<!-- Font CSS -->
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div id="table">
+			<div id="bricks">
+				
+				<div data-brick-id="111" class="brick red" data-points="7"></div>
+				<div class="brick red" data-brick-id="110" data-points="7"></div>
+				<div class="brick red" data-brick-id="109" data-points="7"></div>
+				<div class="brick red" data-brick-id="108" data-points="7"></div>
+				<div class="brick red" data-brick-id="107" data-points="7"></div>
+				<div class="brick red" data-brick-id="106" data-points="7"></div>
+				<div class="brick red" data-brick-id="105" data-points="7"></div>
+				<div class="brick red" data-brick-id="104" data-points="7"></div>
+				<div class="brick red" data-brick-id="103" data-points="7"></div>
+				<div class="brick red" data-brick-id="102" data-points="7"></div>
+				<div class="brick red" data-brick-id="101" data-points="7"></div>
+				<div class="brick red" data-brick-id="100" data-points="7"></div>
+				<div class="brick red" data-brick-id="99" data-points="7"></div>
+				<div class="brick red" data-brick-id="98" data-points="7"></div>
+				                      
+				<div class="brick red" data-brick-id="97" data-points="7"></div>
+				<div class="brick red" data-brick-id="96" data-points="7"></div>
+				<div class="brick red" data-brick-id="95" data-points="7"></div>
+				<div class="brick red" data-brick-id="94" data-points="7"></div>
+				<div class="brick red" data-brick-id="93" data-points="7"></div>
+				<div class="brick red" data-brick-id="92" data-points="7"></div>
+				<div class="brick red" data-brick-id="91" data-points="7"></div>
+				<div class="brick red" data-brick-id="90" data-points="7"></div>
+				<div class="brick red" data-brick-id="89" data-points="7"></div>
+				<div class="brick red" data-brick-id="88" data-points="7"></div>
+				<div class="brick red" data-brick-id="87" data-points="7"></div>
+				<div class="brick red" data-brick-id="86" data-points="7"></div>
+				<div class="brick red" data-brick-id="85" data-points="7"></div>
+				<div class="brick red" data-brick-id="84" data-points="7"></div>
+				
+				<div class="brick orange" data-brick-id="83" data-points="5"></div>
+				<div class="brick orange" data-brick-id="82" data-points="5"></div>
+				<div class="brick orange" data-brick-id="81" data-points="5"></div>
+				<div class="brick orange" data-brick-id="80" data-points="5"></div>
+				<div class="brick orange" data-brick-id="79" data-points="5"></div>
+				<div class="brick orange" data-brick-id="78" data-points="5"></div>
+				<div class="brick orange" data-brick-id="77" data-points="5"></div>
+				<div class="brick orange" data-brick-id="76" data-points="5"></div>
+				<div class="brick orange" data-brick-id="75" data-points="5"></div>
+				<div class="brick orange" data-brick-id="74" data-points="5"></div>
+				<div class="brick orange" data-brick-id="73" data-points="5"></div>
+				<div class="brick orange" data-brick-id="72" data-points="5"></div>
+				<div class="brick orange" data-brick-id="71" data-points="5"></div>
+				<div class="brick orange" data-brick-id="70" data-points="5"></div>
+				                         
+				<div class="brick orange" data-brick-id="69" data-points="5"></div>
+				<div class="brick orange" data-brick-id="68" data-points="5"></div>
+				<div class="brick orange" data-brick-id="67" data-points="5"></div>
+				<div class="brick orange" data-brick-id="66" data-points="5"></div>
+				<div class="brick orange" data-brick-id="65" data-points="5"></div>
+				<div class="brick orange" data-brick-id="64" data-points="5"></div>
+				<div class="brick orange" data-brick-id="63" data-points="5"></div>
+				<div class="brick orange" data-brick-id="62" data-points="5"></div>
+				<div class="brick orange" data-brick-id="61" data-points="5"></div>
+				<div class="brick orange" data-brick-id="60" data-points="5"></div>
+				<div class="brick orange" data-brick-id="59" data-points="5"></div>
+				<div class="brick orange" data-brick-id="58" data-points="5"></div>
+				<div class="brick orange" data-brick-id="57" data-points="5"></div>
+				<div class="brick orange" data-brick-id="56" data-points="5"></div>
+				
+				<div class="brick green" data-brick-id="55" data-points="3"></div>
+				<div class="brick green" data-brick-id="54" data-points="3"></div>
+				<div class="brick green" data-brick-id="53" data-points="3"></div>
+				<div class="brick green" data-brick-id="52" data-points="3"></div>
+				<div class="brick green" data-brick-id="51" data-points="3"></div>
+				<div class="brick green" data-brick-id="50" data-points="3"></div>
+				<div class="brick green" data-brick-id="49" data-points="3"></div>
+				<div class="brick green" data-brick-id="48" data-points="3"></div>
+				<div class="brick green" data-brick-id="47" data-points="3"></div>
+				<div class="brick green" data-brick-id="46" data-points="3"></div>
+				<div class="brick green" data-brick-id="45" data-points="3"></div>
+				<div class="brick green" data-brick-id="44" data-points="3"></div>
+				<div class="brick green" data-brick-id="43" data-points="3"></div>
+				<div class="brick green" data-brick-id="42" data-points="3"></div>
+				                        
+				<div class="brick green" data-brick-id="41" data-points="3"></div>
+				<div class="brick green" data-brick-id="40" data-points="3"></div>
+				<div class="brick green" data-brick-id="39" data-points="3"></div>
+				<div class="brick green" data-brick-id="38" data-points="3"></div>
+				<div class="brick green" data-brick-id="37" data-points="3"></div>
+				<div class="brick green" data-brick-id="36" data-points="3"></div>
+				<div class="brick green" data-brick-id="35" data-points="3"></div>
+				<div class="brick green" data-brick-id="34" data-points="3"></div>
+				<div class="brick green" data-brick-id="33" data-points="3"></div>
+				<div class="brick green" data-brick-id="32" data-points="3"></div>
+				<div class="brick green" data-brick-id="31" data-points="3"></div>
+				<div class="brick green" data-brick-id="30" data-points="3"></div>
+				<div class="brick green" data-brick-id="29" data-points="3"></div>
+				<div class="brick green" data-brick-id="28" data-points="3"></div>
+
+				<div class="brick yellow" data-brick-id="27" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="26" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="25" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="24" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="23" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="22" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="21" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="20" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="19" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="18" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="17" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="16" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="15" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="14" data-points="1"></div>
+				                         
+				<div class="brick yellow" data-brick-id="13" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="12" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="11" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="10" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="9" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="8" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="7" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="6" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="5" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="4" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="3" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="2" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="1" data-points="1"></div>
+				<div class="brick yellow" data-brick-id="0" data-points="1"></div>
+			</div>
+
+			<div id="ball"></div>
+
+			<div id="paddle"></div>
+
+			<div id="paddle-blocker"></div>
+
+			<span id="score">000</span>
+
+			<div id="lives">1</div>
+		</div>
+
+		<!-- Main Javascript -->
+		<script src="js/main.js"></script>
+	</body>
+</html>

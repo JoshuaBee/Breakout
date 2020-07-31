@@ -1,0 +1,21 @@
+{
+  "short_name": "Breakout",
+  "name": "Breakout",
+  "description": "Breakout",
+  "icons": [
+	{
+	  "src": "logo-192.png",
+	  "type": "image/png",
+	  "sizes": "192x192"
+	},
+	{
+	  "src": "logo-512.png",
+	  "type": "image/png",
+	  "sizes": "512x512"
+	}
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#000",
+  "theme_color": "#000"
+}
